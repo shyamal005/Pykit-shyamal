@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: pykit-shyamal
+Version: 0.1.0
+Summary: A Pragmatic Utility Library for Modern Python Development
+Home-page: https://github.com/shyamal005/pykit
+Author: Shyamal
+Author-email: kudipudishaymal0123@gmail.com
+Project-URL: Bug Reports, https://github.com/shyamal005/pykit/issues
+Project-URL: Source, https://github.com/shyamal005/pykit/
+Keywords: utility utils tools helpers library
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: project-url
+Dynamic: requires-python
+Dynamic: summary
