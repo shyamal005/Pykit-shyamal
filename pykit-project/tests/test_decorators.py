@@ -13,18 +13,18 @@ class TestDecorators(unittest.TestCase):
         def slow_function(x):
             nonlocal call_count
             call_count += 1
-            time.sleep(0.01)  # Simulate work
+            time.sleep(0.01)  
             return x * 2
 
-        # First call should be slow and increment count
+        
         self.assertEqual(slow_function(5), 10)
         self.assertEqual(call_count, 1)
 
-        # Second call with same arg should be fast and not increment count
+      
         self.assertEqual(slow_function(5), 10)
         self.assertEqual(call_count, 1)
 
-        # Call with different arg should be slow and increment count
+  
         self.assertEqual(slow_function(10), 20)
         self.assertEqual(call_count, 2)
 
@@ -50,4 +50,5 @@ class TestDecorators(unittest.TestCase):
             always_fail()
 
 if __name__ == '__main__':
+
     unittest.main()
