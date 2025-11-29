@@ -8,7 +8,7 @@ def memoize(func):
 
     @wraps(func)
     def wrapper(*args, **kwargs):
-        # Create a hashable key from the arguments
+        
         key = (args, frozenset(kwargs.items()))
         
         if key not in cache:
@@ -34,7 +34,7 @@ def retry(tries=3, delay=1, backoff=2):
                     time.sleep(_delay)
                     _tries -= 1
                     _delay *= backoff
-            # Final attempt
+           
             return func(*args, **kwargs)
         return wrapper
     return decorator
@@ -51,4 +51,5 @@ def timer(func):
         run_time = end_time - start_time
         print(f"Finished '{func.__name__}' in {run_time:.4f} secs")
         return result
+
     return wrapper
